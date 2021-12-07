@@ -1,7 +1,7 @@
-from index import add
+from index import multiply
 
-def test_add():
-    assert add(1,2) == 3
-    assert add(1, "asdf") == "Invalid Input"
+def test_multiply():
+    assert multiply(3,4) == 12
+    assert multiply(7, "sr7") == "Invalid Input"
 
-    # assert add(1,"abc") == "Invalid Input"
+    
