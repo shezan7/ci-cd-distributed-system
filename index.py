@@ -5,18 +5,18 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return {
-        'msg': 'Hello World!',
-        'app_version': '4'
+        'msg': 'Hello from Shezan!',
+        'app_version': '7'
     }
 
 @app.route('/add/<a>/<b>')
 def add_route(a, b):
     return {
-        'sum': add(a, b)
+        'sum': multiply(a, b)
     }
 
 # Input can be both strings and digits
-def add(x,y):
+def multiply(x,y):
     if type(x) == str and not x.isdigit():
         return "Invalid Input"
 
@@ -25,7 +25,7 @@ def add(x,y):
 
     x = int(x)
     y = int(y)
-    return x + y
+    return x * y
 
 
 if __name__ == "__main__":
