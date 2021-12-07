@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return {
         'msg': 'Hello from Shezan!',
-        'app_version': '7'
+        'app_version': '3'
     }
 
 @app.route('/add/<a>/<b>')
