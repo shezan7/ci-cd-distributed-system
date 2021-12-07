@@ -9,7 +9,7 @@ def index():
         'app_version': '3'
     }
 
-@app.route('/add/<a>/<b>')
+@app.route('/multiply/<a>/<b>')
 def add_route(a, b):
     return {
         'sum': multiply(a, b)
